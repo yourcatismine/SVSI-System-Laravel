@@ -70,7 +70,7 @@ export default function StudentDashboard() {
         hasShownWelcomeNotification.current = true;
 
         notificationApi.open({
-            title: <span style={{ color: '#fff' }}>Welcome back, Juan Delacruz</span>,
+            title: <span style={{ color: '#fff' }}>Welcome back, Diego Burgos</span>,
             description: <span style={{ color: '#fff' }}>Your Student Learning Portal is ready.</span>,
             showProgress: true,
             duration: 20,
@@ -187,7 +187,7 @@ export default function StudentDashboard() {
                                     {!isMobile && (
                                         <div className="ml-4 flex items-center gap-3">
                                             <div className="min-w-0">
-                                                <Typography.Text className="block text-xl font-bold !text-white">Juan Delacruz</Typography.Text>
+                                                <Typography.Text className="block text-xl font-bold !text-white">Diego Burgos</Typography.Text>
                                             </div>
                                             <Avatar size={40} className="bg-cyan-500 text-slate-950" icon={<UserOutlined />} />
                                         </div>
@@ -274,6 +274,7 @@ export default function StudentDashboard() {
                         onClose={() => setMobileSidebarOpen(false)}
                         open={mobileSidebarOpen}
                         width={290}
+                        zIndex={3000}
                         className="student-sidebar-drawer"
                         styles={{ body: { padding: 0, background: '#0f172a' } }}
                     >
@@ -309,7 +310,7 @@ export default function StudentDashboard() {
                                 <div className="flex items-center gap-3">
                                     <Avatar size={40} className="bg-cyan-500 text-slate-950" icon={<UserOutlined />} />
                                     <div className="min-w-0">
-                                        <Typography.Text className="block text-lg font-bold !text-white">Juan Delacruz</Typography.Text>
+                                        <Typography.Text className="block text-lg font-bold !text-white">Diego Burgos</Typography.Text>
                                     </div>
                                 </div>
                             </div>
